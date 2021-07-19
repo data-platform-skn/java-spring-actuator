@@ -6,7 +6,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 
-@PropertySource("classpath:application.properties")
+@PropertySource("file:./config-dir/application.properties")
 public class PropertiesWithJavaConfig {
 
     @Value("${a}")
